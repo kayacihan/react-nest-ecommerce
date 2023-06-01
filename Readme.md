@@ -86,3 +86,13 @@ The application provides two types of user accounts:
 As a customer, I want to be able to browse the music store and search for specific products. I should be able to view product details, add products to my shopping cart, and place orders securely.
 
 As an administrator, I want to have access to an admin interface where I can manage the products in the store. I should be able to create new products, update existing products, and delete products if necessary. I should also be able to manage the stock levels of the products.
+
+## Screenshot
+
+For Customer User:
+![Screenshot](./screen/customer.jpg)
+![Screenshot](./screen/cart.jpg)
+
+For Admin User:
+![Screenshot](./screen/admin.jpg)
+![Screenshot](./screen/product.jpg)
