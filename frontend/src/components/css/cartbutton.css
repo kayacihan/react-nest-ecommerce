@@ -1,0 +1,21 @@
+.cart-button {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+}
+
+.cart-badge {
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(0.5rem);
+    background-color: #dc3545;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}

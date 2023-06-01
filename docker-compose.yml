@@ -1,0 +1,43 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/docker.env
+    depends_on:
+      - postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+    env_file:
+      - docker-db.env
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    env_file:
+      - docker-db.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
+
+
+
